@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = {
@@ -47,7 +47,7 @@ export function Footer() {
                   href="#"
                   className="w-9 h-9 rounded-full bg-card border border-rim flex items-center justify-center hover:border-gold hover:shadow-[0_0_10px_rgba(201,147,58,0.3)] transition-all"
                 >
-                  <img
+                  <Image
                     src={icon.src}
                     alt={icon.alt}
                     className="w-8 h-8 object-contain"

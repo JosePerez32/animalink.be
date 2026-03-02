@@ -27,7 +27,7 @@ export default function DownloadPage() {
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <button className="flex items-center gap-3 bg-card border border-rim rounded-xl px-6 py-4 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,147,58,0.12)] transition-all">
-              <img
+              <Image
                 src="/ui/applestore.png"
                 alt="Play Store"
                 className="w-16 h-16 object-contain"
@@ -38,7 +38,7 @@ export default function DownloadPage() {
               </div>
             </button>
             <button className="flex items-center gap-3 bg-card border border-rim rounded-xl px-6 py-4 hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,147,58,0.12)] transition-all">
-              <img
+              <Image
                 src="/ui/playstore.png"
                 alt="Play Store"
                 className="w-16 h-16 object-contain"
