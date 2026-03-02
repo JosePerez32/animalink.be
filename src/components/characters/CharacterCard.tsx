@@ -7,10 +7,10 @@ import Image from "next/image";
 
 interface CharacterCardProps {
   character: Character;
-  featured?: boolean;
+  //featured?: boolean;
 }
 
-export function CharacterCard({ character, featured = false }: CharacterCardProps) {
+export function CharacterCard({ character }: CharacterCardProps) {
   return (
     <Link href={`/characters/${character.slug}`}>
       <motion.article

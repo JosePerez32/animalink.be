@@ -5,7 +5,7 @@ import { SectionTag } from "@/components/ui/SectionTag";
 import { Pill } from "@/components/ui/Pill";
 import { Button } from "@/components/ui/Button";
 import { AmbientBlob } from "@/components/effects/AmbientBlob";
-import Link from "next/link";
+//import Link from "next/link";
 
 const features = [
   "Persistent Memory",
@@ -30,9 +30,9 @@ export function WhatIs() {
           >
             <SectionTag>About the World</SectionTag>
             <h2 className="font-title text-4xl md:text-5xl text-white mb-6 leading-tight">
-              These aren't chatbots.
+              These aren&apos;t chatbots.
               <br />
-              They're <span className="gradient-text">residents</span>.
+              They&apos;re <span className="gradient-text">residents</span>.
             </h2>
             <p className="text-lg text-text leading-relaxed mb-4">
               In the soot-covered streets of <em className="text-gold-soft not-italic">Furrapest</em>, anthropomorphic beings carry stories older than memory.
@@ -70,13 +70,13 @@ export function WhatIs() {
                   
                   <div className="w-full space-y-3">
                     <div className="bg-white/[0.08] rounded-xl rounded-bl-sm p-3 text-xs text-text leading-relaxed">
-                      Good evening, Rony. I've been thinking about what you said — about loneliness feeling different in busy cities...
+                      Good evening, Rony. I&apos;ve been thinking about what you said — about loneliness feeling different in busy cities...
                     </div>
                     <div className="bg-gradient-to-br from-gold/25 to-gold/10 rounded-xl rounded-br-sm p-3 text-xs text-gold-soft leading-relaxed ml-auto max-w-[85%]">
                       Do you ever feel lonely?
                     </div>
                     <div className="bg-white/[0.08] rounded-xl rounded-bl-sm p-3 text-xs text-text leading-relaxed">
-                      Sometimes. But not when you're here.
+                      Sometimes. But not when you&apos;re here.
                       <span className="block mt-1 text-[10px] text-muted">10:26 PM · Today</span>
                     </div>
                   </div>

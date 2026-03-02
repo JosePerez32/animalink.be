@@ -2,7 +2,7 @@ import { Starfield } from "@/components/effects/Starfield";
 import { SectionTag } from "@/components/ui/SectionTag";
 import { Button } from "@/components/ui/Button";
 import { Metadata } from "next";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Download — Animalink",
   description: "Enter Furrapest for free. Available for iOS and Android.",

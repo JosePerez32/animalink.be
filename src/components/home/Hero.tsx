@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { AmbientBlob } from "@/components/effects/AmbientBlob";
-import Link from "next/link";
+//import Link from "next/link";
 
 export function Hero() {
   return (
