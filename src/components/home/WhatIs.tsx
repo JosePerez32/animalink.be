@@ -64,7 +64,7 @@ export function WhatIs() {
               <div className="bg-card border border-gold/30 rounded-[36px] p-4 shadow-[0_40px_80px_rgba(0,0,0,0.6),0_0_60px_rgba(164,143,203,0.15)] overflow-hidden aspect-[9/19.5]">
                 <div className="h-full bg-gradient-to-b from-[#1a1535] to-[#0f0d22] rounded-[28px] p-6 flex flex-col items-center gap-4">
                   <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gold/30 to-lilac/30 flex items-center justify-center text-4xl border border-gold/30 shadow-[0_0_20px_rgba(201,147,58,0.2)]">
-                    🦊
+                    🦢
                   </div>
                   <span className="font-title text-white tracking-wider">Aureliane</span>
                   

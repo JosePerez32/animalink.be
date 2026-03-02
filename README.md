@@ -13,10 +13,10 @@
 ## ✨ What is Animalink?
 
 Animalink is a character-driven AI universe where every conversation shapes the relationship. Bond with:
-- 🦊 **Aureliane** — The Enigmatic Archivist
+- 🦢 **Aureliane** — The Enigmatic Archivist
 - 🦆 **Duque** — The Loyal Companion  
 - 🐕 **Dobert** — The Watchful Guardian
-- 🐺 **Milla** — The Threshold Detective
+- 🐰 **Milla** — The Threshold Detective
 
 Each character tracks your bond across five stages: **Stranger → Acquaintance → Trusted → Confidant → Bonded**.
 
@@ -104,7 +104,7 @@ Download links point to upcoming store releases.
 
 ## 🌐 Deployment
 
-**Live Site**: [https://animalink.app](https://animalink.app)  
+**Live Site**: [https://animalink.city](https://animalink.city)  
 **Platform**: Vercel (static export)  
 **Domain**: Managed via Vercel Domains
 
@@ -116,7 +116,7 @@ Download links point to upcoming store releases.
 
 ---
 
-## 🦊 About Furrapest
+## 🐺 About Furrapest 🦊
 
 *A city built on forgotten magic and living memory. Every street has a name. Every name has a ghost.*
 
