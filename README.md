@@ -1,6 +1,3 @@
- Aquí un README.md profesional para tu proyecto:
-
-```markdown
 # Animalink — Tales of Furrapest
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
@@ -130,4 +127,3 @@ Built with care by the Animalink team.
 <p align="center">
   <strong>Animalink</strong> — Where the city remembers you.
 </p>
-```
