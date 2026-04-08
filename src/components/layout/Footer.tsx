@@ -19,7 +19,7 @@ const footerLinks = {
     { href: "/legal/privacy", label: "Privacy Policy" },
     { href: "/legal/terms", label: "Terms of Service" },
     { href: "#", label: "Cookie Settings" },
-    { href: "mailto:legal@animalink.app", label: "legal@animalink.app" },
+    { href: "mailto:supp@animalink.city", label: "supp@animalink.city" },
   ],
 };
 
@@ -82,7 +82,6 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h4 className="font-title text-xs tracking-widest uppercase text-gold-soft mb-5">Legal</h4>
             <ul className="flex flex-col gap-3">

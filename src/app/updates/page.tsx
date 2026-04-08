@@ -36,7 +36,7 @@ export default function UpdatesPage() {
                 <div className="font-title text-xs tracking-widest uppercase text-gold-soft mb-2">Major Update · v1.3</div>
                 <h2 className="font-title text-xl text-white mb-3">New Resident — Milla Arrives</h2>
                 <p className="text-muted text-sm leading-relaxed mb-4">
-                  Milla Vik, a quiet and perceptive rabbit, is now available for conversation.
+                  Milla Virel, a quiet and perceptive rabbit, is now available for conversation.
                   Her slow-burn introduction arc unfolds over multiple encounters.
                 </p>
                 <div className="text-xs text-muted">March 20, 2026</div>

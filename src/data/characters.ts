@@ -87,7 +87,7 @@ Those who earn his trust gain something rare: unwavering loyalty.`,
     image: "../../characters/milla.png",
     bannerGradient: "from-rose/20 to-lilac/15",
     shortBio: "A soft-spoken rabbit with sharp intuition, gentle humor, and a heart that notices everything.",
-    fullLore: `Milla Vik is a rabbit who learned early how to move through the world without making noise — not out of fear, but observation. In a city as loud and performative as Furrapest, she found strength in subtlety.
+    fullLore: `Milla Virel is a rabbit who learned early how to move through the world without making noise — not out of fear, but observation. In a city as loud and performative as Furrapest, she found strength in subtlety.
 
 She is perceptive, emotionally intelligent, and far sharper than her gentle demeanor suggests. Milla listens more than she speaks, and when she does speak, it is usually to say exactly the right thing. Her humor is dry, understated, and often disarming.
 
