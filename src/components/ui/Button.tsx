@@ -10,6 +10,7 @@ interface ButtonProps {
   href?: string;
   className?: string;
   fullWidth?: boolean;
+  disabled?: boolean;
 }
 
 export function Button({
@@ -17,6 +18,7 @@ export function Button({
   variant = "primary",
   onClick,
   href,
+  disabled,
   className,
   fullWidth = false,
 }: ButtonProps) {
@@ -36,6 +38,7 @@ export function Button({
       className={cn(baseStyles, variants[variant], fullWidth && "w-full", className)}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
+      disabled={disabled}
     >
       {children}
     </Component>
