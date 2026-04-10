@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { Starfield } from "@/components/effects/Starfield";
 import { SectionTag } from "@/components/ui/SectionTag";
