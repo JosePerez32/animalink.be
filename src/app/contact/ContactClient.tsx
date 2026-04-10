@@ -91,7 +91,7 @@ export default function ContactClient() {
                                         onChange={e => setForm(p => ({ ...p, message: e.target.value }))}
                                         rows={4}
                                         className="w-full bg-surface border border-rim rounded-xl px-4 py-3 text-white focus:border-gold/50 focus:outline-none focus:ring-2 focus:ring-gold/10 resize-none"
-                                        placeholder="What's on your mind?"
+                                        placeholder="What&apos;s on your mind?"
                                     />
                                 </div>
                                 {status === 'ok' && (
