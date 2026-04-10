@@ -1,8 +1,12 @@
+'use client';
 import { useState } from 'react';
 import { Starfield } from "@/components/effects/Starfield";
 import { SectionTag } from "@/components/ui/SectionTag";
 import { Button } from "@/components/ui/Button";
 import { Metadata } from "next";
+import ContactClient from './ContactClient';
+
+
 
 export const metadata: Metadata = {
   title: "Contact — Animalink",
@@ -29,7 +33,7 @@ export default function ContactPage() {
     } catch {
       setStatus('error');
     }
-  };
+  }; 
   return (
     <>
       <Starfield />
@@ -107,6 +111,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        <ContactClient />;
       </section>
     </>
   );
