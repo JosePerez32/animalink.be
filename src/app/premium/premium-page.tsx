@@ -119,8 +119,8 @@ export default function PremiumPage() {
             </h1>
             <div className="glow-divider" />
             <p className="text-text leading-relaxed max-w-lg mx-auto mt-4">
-              Three tiers. One world. Where you stand in Cinderfall depends on how far
-              you're willing to go.
+              {"Three tiers. One world. Where you stand in Cinderfall depends on how far"}
+              {" you're willing to go."}
             </p>
           </div>
 
