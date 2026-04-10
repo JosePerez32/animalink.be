@@ -3,10 +3,15 @@ import { useState } from 'react';
 import { Starfield } from "@/components/effects/Starfield";
 import { SectionTag } from "@/components/ui/SectionTag";
 import { Button } from "@/components/ui/Button";
+
+
 import { Metadata } from "next";
 import ContactClient from './ContactClient';
 
 
+export default function ContactPage() {
+  
+}
 
 export const metadata: Metadata = {
   title: "Contact — Animalink",
@@ -35,7 +40,9 @@ export default function ContactPage() {
     }
   }; 
   return (
+  
     <>
+    <ContactClient />
       <Starfield />
       <section className="pt-40 pb-20 px-6">
         <div className="container mx-auto max-w-4xl">
@@ -111,7 +118,6 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <ContactClient />;
       </section>
     </>
   );
