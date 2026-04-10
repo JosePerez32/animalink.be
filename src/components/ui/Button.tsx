@@ -11,6 +11,7 @@ interface ButtonProps {
   className?: string;
   fullWidth?: boolean;
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 export function Button({
@@ -21,6 +22,7 @@ export function Button({
   disabled,
   className,
   fullWidth = false,
+  type = "button",
 }: ButtonProps) {
   const baseStyles = "inline-flex items-center justify-center gap-2 font-title text-xs tracking-widest uppercase font-bold rounded-full transition-all duration-300 cursor-pointer";
   
@@ -39,6 +41,7 @@ export function Button({
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       disabled={disabled}
+      type={type}
     >
       {children}
     </Component>
