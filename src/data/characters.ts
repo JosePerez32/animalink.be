@@ -37,7 +37,7 @@ Despite her privileged upbringing, Aureliane possesses a discreet empathy, parti
     status: "available",
     image: "../../characters/duque.png",
     bannerGradient: "from-teal/15 to-gold/15",
-    shortBio: "A charismatic duck who grew up underestimated and chose warmth over bitterness.",
+    shortBio: "A charismatic duck ---- Test who grew up underestimated and chose warmth over bitterness.",
     fullLore: `Duque Duck carries the easy smile of someone who learned early how to survive being different. Raised among swans who never quite accepted him, he grew up knowing rejection — and chose not to let it harden him.
 
 He is playful, approachable, and genuinely kind, but never naive. When necessary, his tone sharpens and his presence becomes unexpectedly intimidating. Duque believes in peace, but he does not confuse kindness with weakness.
