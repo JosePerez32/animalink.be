@@ -24,7 +24,7 @@ export default function ContactPage() {
               
               <div className="space-y-4">
                 {[
-                  { icon: "✉️", text: "hello@animalink.app", href: "mailto:hello@animalink.app" },
+                  { icon: "✉️", text: "supp@animalink.city", href: "mailto:supp@animalink.city" },
                   { icon: "💬", text: "Community Discord", href: "#" },
                   { icon: "🐦", text: "@animalinkapp", href: "#" },
                 ].map((link) => (
