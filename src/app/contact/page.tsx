@@ -19,7 +19,7 @@ export default function ContactPage() {
     setStatus('sending');
 
     try {
-      const res = await fetch('https://tu-backend.com/api/contact', {
+      const res = await fetch('https://api.animalink.city/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
