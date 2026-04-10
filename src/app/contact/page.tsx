@@ -3,15 +3,8 @@ import { useState } from 'react';
 import { Starfield } from "@/components/effects/Starfield";
 import { SectionTag } from "@/components/ui/SectionTag";
 import { Button } from "@/components/ui/Button";
-
-
 import { Metadata } from "next";
 import ContactClient from './ContactClient';
-
-
-export default function ContactPage() {
-  
-}
 
 export const metadata: Metadata = {
   title: "Contact — Animalink",
