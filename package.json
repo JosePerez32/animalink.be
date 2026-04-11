@@ -13,6 +13,8 @@
     "@fontsource/cinzel-decorative": "^5.2.8",
     "@fontsource/lato": "^5.2.7",
     "@fontsource/playfair-display": "^5.2.8",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.103.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.34.3",
     "lucide-react": "^0.575.0",

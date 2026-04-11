@@ -34,7 +34,7 @@ export function Nav() {
         }`}
       >
         <Link href="/" className="font-display text-lg text-gold-soft tracking-wider whitespace-nowrap drop-shadow-[0_0_20px_rgba(201,147,58,0.5)]">
-          An9imalink <span className="text-lilac-soft">✦</span>
+          Animalink <span className="text-lilac-soft">✦</span>
         </Link>
 
         <ul className="hidden lg:flex gap-10 list-none">
