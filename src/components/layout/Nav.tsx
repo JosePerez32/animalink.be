@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -18,17 +18,17 @@ const navLinks = [
 type UserTier = "streetborn" | "highborn" | "crownbound" | null;
 
 const tierStyles: Record<NonNullable<UserTier>, { label: string; color: string; border: string }> = {
-  streetborn: { label: "Streetborn", color: "text-muted",    border: "border-muted/30" },
-  highborn:   { label: "Highborn",   color: "text-lilac",    border: "border-lilac/30" },
-  crownbound: { label: "Crownbound", color: "text-gold",     border: "border-gold/30"  },
+  streetborn: { label: "Streetborn", color: "text-muted", border: "border-muted/30" },
+  highborn: { label: "Highborn", color: "text-lilac", border: "border-lilac/30" },
+  crownbound: { label: "Crownbound", color: "text-gold", border: "border-gold/30" },
 };
 
 export function Nav() {
-  const [scrolled, setScrolled]       = useState(false);
-  const [mobileOpen, setMobileOpen]   = useState(false);
-  const [showAuth, setShowAuth]       = useState(false);
-  const [user, setUser]               = useState<User | null>(null);
-  const [tier, setTier]               = useState<UserTier>(null);
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [showAuth, setShowAuth] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const [tier, setTier] = useState<UserTier>(null);
   const [showUserMenu, setShowUserMenu] = useState(false);
 
   const supabase = createClient();
@@ -38,8 +38,15 @@ export function Nav() {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [fetchTier, supabase.auth]);
-
+  }, []);
+  const fetchTier = useCallback(async (userId: string) => {
+    const { data } = await supabase
+      .from("profiles")
+      .select("tier")
+      .eq("id", userId)
+      .single();
+    setTier((data?.tier as UserTier) ?? "streetborn");
+  }, [supabase]);
   // Auth listener — se activa cuando el usuario inicia/cierra sesión
   useEffect(() => {
     supabase.auth.getUser().then(({ data: { user } }) => {
@@ -54,16 +61,7 @@ export function Nav() {
     });
 
     return () => subscription.unsubscribe();
-  }, []);
-
-  async function fetchTier(userId: string) {
-    const { data } = await supabase
-      .from("profiles")
-      .select("tier")
-      .eq("id", userId)
-      .single();
-    setTier((data?.tier as UserTier) ?? "streetborn");
-  }
+  }, [fetchTier, supabase.auth]);
 
   async function handleSignOut() {
     await supabase.auth.signOut();
@@ -80,11 +78,10 @@ export function Nav() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-16 h-[72px] transition-all duration-400 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-16 h-[72px] transition-all duration-400 ${scrolled
             ? "bg-[rgba(10,9,20,0.92)] border-b border-gold/15 backdrop-blur-md"
             : "bg-gradient-to-b from-[rgba(7,6,15,0.95)] to-transparent"
-        }`}
+          }`}
       >
         {/* Logo */}
         <Link href="/" className="font-display text-lg text-gold-soft tracking-wider whitespace-nowrap drop-shadow-[0_0_20px_rgba(201,147,58,0.5)]">
