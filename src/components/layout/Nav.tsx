@@ -38,7 +38,7 @@ export function Nav() {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [fetchTier, supabase.auth]);
 
   // Auth listener — se activa cuando el usuario inicia/cierra sesión
   useEffect(() => {
